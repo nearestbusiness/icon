@@ -1,0 +1,73 @@
+addEventListener("fetch", event => {
+  const data = {
+    name: "Nearest Business",
+    short_name: "Nearest Business",
+    display: "standalone",
+    prefer_related_applications: false,
+    start_url: ".",
+    scope: "\/",
+    background_color: "#007fa0",
+    theme_color: "#007fa0",
+    icons:[
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s36/nearestbusiness.png",
+      sizes: "36x36",
+      type: "image\/png",
+      density: "0.75",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s48/nearestbusiness.png",
+      sizes: "48x48",
+      type: "image\/png",
+      density: "1.0",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s72/nearestbusiness.png",
+      sizes: "72x72",
+      type: "image\/png",
+      density: "1.5",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s96/nearestbusiness.png",
+      sizes: "96x96",
+      type: "image\/png",
+      density: "2.0",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s144/nearestbusiness.png",
+      sizes: "144x144",
+      type: "image\/png",
+      density: "3.0",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s192/nearestbusiness.png",
+      sizes: "192x192",
+      type: "image\/png",
+      density: "4.0",
+      purpose: "any maskable"
+      },
+      {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKp9p0M5sUzEpqZpez9KPjc6suT1-IX7KEpTFraCSZvo8nt6x1tN73caLNiW4lt-OSTa8dXTu2TslYGLkQybvLB7nDYBa-ZG86WykJeJF8fJ9ptJt1R7wice3VXGHyNHzQKaaN8moP9XE8FL1ZKdlL6Fn8w7R2OvYbYSrSFcdg5v2jyYI960daylsbvQ/s512/nearestbusiness.png",
+      sizes: "512x512",
+      type: "image/png",
+      density: "4.0",
+      purpose: "any maskable"
+      },
+    ]
+  }
+
+  const json = JSON.stringify(data, null, 2)
+
+  return event.respondWith(
+    new Response(json, {
+      headers: {
+        "content-type": "application/json;charset=UTF-8"
+      }
+    })
+  )
+})
